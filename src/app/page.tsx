@@ -72,7 +72,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             {/* Article Card 1 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+            <div className="bg-white shadow-md overflow-hidden card-hover">
               <div className="relative h-100">
                 <Image src="/Photo/Frame 12.png" alt="Bandung event" fill className="object-cover" />
 
@@ -92,7 +92,7 @@ export default function Home() {
             </div>
 
             {/* Article Card 2 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+            <div className="bg-white shadow-md overflow-hidden card-hover">
               <div className="relative h-100">
                 <Image src="/Photo/Frame 13.png" alt="Yogyakarta event" fill className="object-cover" />
 
@@ -112,7 +112,7 @@ export default function Home() {
             </div>
 
             {/* Article Card 3 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+            <div className="bg-white shadow-md overflow-hidden card-hover">
               <div className="relative h-100">
                 <Image src="/Photo/Frame 14.png" alt="Jakarta event" fill className="object-cover" />
 
@@ -132,7 +132,7 @@ export default function Home() {
             </div>
 
             {/* Article Card 4 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+            <div className="bg-white shadow-md overflow-hidden card-hover">
               <div className="relative h-100">
                 <Image src="/Photo/Frame 15.png" alt="Surabaya event" fill className="object-cover" />
 
@@ -152,7 +152,7 @@ export default function Home() {
             </div>
 
             {/* Article Card 5 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+            <div className="bg-white shadow-md overflow-hidden card-hover">
               <div className="relative h-100">
                 <Image src="/Photo/Frame 16.png" alt="Bali event" fill className="object-cover" />
 
