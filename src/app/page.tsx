@@ -47,18 +47,24 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center">
-        <div className="absolute inset-0">
-          <Image src="/Photo/Frame 6.png" alt="Concert background" fill className="object-cover" priority />
-          <div className="absolute inset-0 hero-gradient"></div>
-        </div>
+      <section className="relative py-20 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Image */}
+            <div className="relative h-96 lg:h-[500px] rounded-lg overflow-hidden">
+              <Image src="/Photo/Frame 6.png" alt="Concert background" fill className="object-cover" priority />
+              <div className="absolute inset-0 hero-gradient"></div>
+            </div>
 
-        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">Never Go to Events Alone Again - Find Your Perfect Event Companion</h1>
-          <p className="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto">
-            EventConnect menghubungkan Anda dengan orang-orang yang memiliki minat yang sama untuk menjelajahi setiap festival, konser, pameran, dan acara lainnya. Temukan teman perjalanan yang sempurna dan maksimalkan pengalaman acara
-            Anda.
-          </p>
+            {/* Text Content */}
+            <div className="text-left">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">Never Go to Events Alone Again - Find Your Perfect Event Companion</h1>
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                EventConnect menghubungkan Anda dengan orang-orang yang memiliki minat yang sama untuk menjelajahi setiap festival, konser, pameran, dan acara lainnya. Temukan teman perjalanan yang sempurna dan maksimalkan pengalaman acara
+                Anda.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
