@@ -49,17 +49,14 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Image */}
-            <div className="relative h-96 lg:h-[500px] rounded-lg overflow-hidden">
-              <Image src="/Photo/Frame 6.png" alt="Concert background" fill className="object-cover" priority />
-              <div className="absolute inset-0 hero-gradient"></div>
-            </div>
+          <div className="relative h-96 lg:h-[500px] overflow-hidden">
+            <Image src="/Photo/Frame 6.png" alt="Concert background" fill className="object-cover" priority />
+            <div className="absolute inset-0 hero-gradient"></div>
 
-            {/* Text Content */}
-            <div className="text-left">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">Never Go to Events Alone Again - Find Your Perfect Event Companion</h1>
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+            {/* Text Content inside the image */}
+            <div className="absolute bottom-8 left-8 right-8 lg:right-auto lg:w-1/2 text-white">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">Never Go to Events Alone Again - Find Your Perfect Event Companion</h1>
+              <p className="text-base md:text-lg text-white leading-relaxed">
                 EventConnect menghubungkan Anda dengan orang-orang yang memiliki minat yang sama untuk menjelajahi setiap festival, konser, pameran, dan acara lainnya. Temukan teman perjalanan yang sempurna dan maksimalkan pengalaman acara
                 Anda.
               </p>
