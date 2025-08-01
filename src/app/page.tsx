@@ -139,7 +139,7 @@ export default function Home() {
                 {/* Central texture block */}
                 <div className="absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5">
                   <div className="relative bg-white bg-opacity-90 p-6 h-64 overflow-hidden">
-                    <Image src="/Photo/texture-artikel.png" alt="Texture overlay" fill className="object-cover rounded-lg" />
+                    <Image src="/Photo/texture-artikel.png" alt="Texture overlay" fill className="object-cover" />
                     <div className="relative z-10 h-full flex flex-col">
                       <h3 className="text-sm font-semibold text-gray-800 flex-1 overflow-hidden line-clamp">Surabaya – Konser jazz galang dana beasiswa, tampil Dira Sugandi dan Barry Likumahuwa.</h3>
                       <a href="#" className="text-black hover:text-gray-700 font-medium text-sm mt-2">
