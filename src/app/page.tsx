@@ -2,102 +2,206 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen bg-white">
+      {/* Header */}
+      <header className="bg-white shadow-sm border-b">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            {/* Logo */}
+            <div className="flex-shrink-0">
+              <h1 className="text-2xl font-bold text-gray-900">EventConnect</h1>
+            </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            {/* Search Bar */}
+            <div className="flex-1 max-w-lg mx-8">
+              <div className="relative">
+                <input type="text" placeholder="Cari acara atau teman..." className="w-full pl-4 pr-10 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+                <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
+                  <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            {/* Navigation */}
+            <nav className="flex items-center space-x-6">
+              <a href="#" className="text-gray-700 hover:text-gray-900">
+                Event
+              </a>
+              <div className="w-px h-4 bg-gray-300"></div>
+              <a href="#" className="text-gray-700 hover:text-gray-900">
+                About Us
+              </a>
+              <div className="w-px h-4 bg-gray-300"></div>
+              <a href="#" className="text-gray-700 hover:text-gray-900">
+                Contact
+              </a>
+              <div className="w-px h-4 bg-gray-300"></div>
+              <a href="#" className="text-gray-700 hover:text-gray-900">
+                Sign In
+              </a>
+            </nav>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </header>
+
+      {/* Hero Section */}
+      <section className="relative h-screen flex items-center justify-center">
+        <div className="absolute inset-0">
+          <Image src="/Photo/Frame 6.png" alt="Concert background" fill className="object-cover" priority />
+          <div className="absolute inset-0 hero-gradient"></div>
+        </div>
+
+        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">Never Go to Events Alone Again - Find Your Perfect Event Companion</h1>
+          <p className="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto">
+            EventConnect menghubungkan Anda dengan orang-orang yang memiliki minat yang sama untuk menjelajahi setiap festival, konser, pameran, dan acara lainnya. Temukan teman perjalanan yang sempurna dan maksimalkan pengalaman acara
+            Anda.
+          </p>
+        </div>
+      </section>
+
+      {/* News and Article Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">NEWS AND ARTICLE</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            {/* Article Card 1 */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+              <div className="relative h-100">
+                <Image src="/Photo/Frame 12.png" alt="Bandung event" fill className="object-cover" />
+
+                {/* Central texture block */}
+                <div className="absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5">
+                  <div className="relative bg-white bg-opacity-90 p-6 h-64 overflow-hidden">
+                    <Image src="/Photo/texture-artikel.png" alt="Texture overlay" fill className="object-cover rounded-lg" />
+                    <div className="relative z-10 h-full flex flex-col">
+                      <h3 className="text-sm font-semibold text-gray-800 flex-1 overflow-hidden line-clamp">Bandung – Ribuan penonton padati konser Suara Senja Vol. 3, menampilkan Fourtwnty dan Danilla.</h3>
+                      <a href="#" className="text-black hover:text-gray-700 font-medium text-sm mt-2">
+                        Find Out More →
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Article Card 2 */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+              <div className="relative h-100">
+                <Image src="/Photo/Frame 13.png" alt="Yogyakarta event" fill className="object-cover" />
+
+                {/* Central texture block */}
+                <div className="absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5">
+                  <div className="relative bg-white bg-opacity-90 p-6 h-64 overflow-hidden">
+                    <Image src="/Photo/texture-artikel.png" alt="Texture overlay" fill className="object-cover rounded-lg" />
+                    <div className="relative z-10 h-full flex flex-col">
+                      <h3 className="text-sm font-semibold text-gray-800 flex-1 overflow-hidden line-clamp">Yogyakarta – Anak muda antusias ikuti pelatihan batik pakai aplikasi desain grafis.</h3>
+                      <a href="#" className="text-black hover:text-gray-700 font-medium text-sm mt-2">
+                        Find Out More →
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Article Card 3 */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+              <div className="relative h-100">
+                <Image src="/Photo/Frame 14.png" alt="Jakarta event" fill className="object-cover" />
+
+                {/* Central texture block */}
+                <div className="absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5">
+                  <div className="relative bg-white bg-opacity-90 p-6 h-64 overflow-hidden">
+                    <Image src="/Photo/texture-artikel.png" alt="Texture overlay" fill className="object-cover rounded-lg" />
+                    <div className="relative z-10 h-full flex flex-col">
+                      <h3 className="text-sm font-semibold text-gray-800 flex-1 overflow-hidden line-clamp">Jakarta – Galeri Nasional pamerkan karya seniman jalanan, berlangsung hingga 15 Juli.</h3>
+                      <a href="#" className="text-black hover:text-gray-700 font-medium text-sm mt-2">
+                        Find Out More →
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Article Card 4 */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+              <div className="relative h-100">
+                <Image src="/Photo/Frame 15.png" alt="Surabaya event" fill className="object-cover" />
+
+                {/* Central texture block */}
+                <div className="absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5">
+                  <div className="relative bg-white bg-opacity-90 p-6 h-64 overflow-hidden">
+                    <Image src="/Photo/texture-artikel.png" alt="Texture overlay" fill className="object-cover rounded-lg" />
+                    <div className="relative z-10 h-full flex flex-col">
+                      <h3 className="text-sm font-semibold text-gray-800 flex-1 overflow-hidden line-clamp">Surabaya – Konser jazz galang dana beasiswa, tampil Dira Sugandi dan Barry Likumahuwa.</h3>
+                      <a href="#" className="text-black hover:text-gray-700 font-medium text-sm mt-2">
+                        Find Out More →
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Article Card 5 */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+              <div className="relative h-100">
+                <Image src="/Photo/Frame 16.png" alt="Bali event" fill className="object-cover" />
+
+                {/* Central texture block */}
+                <div className="absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5">
+                  <div className="relative bg-white bg-opacity-90 p-6 h-64 overflow-hidden">
+                    <Image src="/Photo/texture-artikel.png" alt="Texture overlay" fill className="object-cover rounded-lg" />
+                    <div className="relative z-10 h-full flex flex-col">
+                      <h3 className="text-sm font-semibold text-gray-800 flex-1 overflow-hidden line-clamp">Bali – Fotografer dari berbagai negara belajar motret alam Ubud selama 3 hari.</h3>
+                      <a href="#" className="text-black hover:text-gray-700 font-medium text-sm mt-2">
+                        Find Out More →
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Scrolling Categories */}
+      <section className="py-8 bg-gray-50">
+        <div className="overflow-hidden">
+          <div className="scroll-text whitespace-nowrap text-4xl font-bold text-gray-900">
+            WORKSHOP - ART - CONCERT - WORKSHOP - ART - CONCERT - WORKSHOP - ART - CONCERT - WORKSHOP - ART - CONCERT - WORKSHOP - ART - CONCERT - WORKSHOP - ART - CONCERT
+          </div>
+        </div>
+      </section>
+
+      {/* Image Carousel */}
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex space-x-4 overflow-x-auto pb-4">
+            {/* Main Image (Color) */}
+            <div className="flex-shrink-0 w-80 h-60 relative">
+              <Image src="/Photo/Frame 7.png" alt="Main event image" fill className="object-cover rounded-lg" />
+            </div>
+
+            {/* Secondary Images (Grayscale) */}
+            <div className="flex-shrink-0 w-80 h-60 relative">
+              <Image src="/Photo/Frame 8.png" alt="Event crowd" fill className="object-cover rounded-lg grayscale" />
+            </div>
+            <div className="flex-shrink-0 w-80 h-60 relative">
+              <Image src="/Photo/Frame 9.png" alt="Event crowd" fill className="object-cover rounded-lg grayscale" />
+            </div>
+            <div className="flex-shrink-0 w-80 h-60 relative">
+              <Image src="/Photo/Frame 10.png" alt="Event crowd" fill className="object-cover rounded-lg grayscale" />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
