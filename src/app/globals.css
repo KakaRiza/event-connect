@@ -23,6 +23,13 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Custom animations */
@@ -35,8 +42,35 @@ body {
   }
 }
 
+/* scrolling line: full-width block that contains inline spans */
 .scroll-text {
+  white-space: nowrap;
+  display: block; /* ensure it occupies its own line */
   animation: scroll 20s linear infinite;
+  will-change: transform;
+  line-height: 1.1; /* avoid vertical clipping */
+  padding: 0.5rem 0; /* vertical breathing room */
+}
+
+/* Large display heading for NEWS AND ARTICLE */
+.news-heading {
+  font-family: "Apple Garamound";
+  letter-spacing: 0.9rem;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 150px;
+  font-weight: 700;
+  display: block;
+  color: #000;
+}
+.article-number span {
+  color: #ef4444; /* Tailwind's red-500 */
+}
+/* inner repeated spans should be inline so they line up horizontally */
+.scroll-text span,
+.scroll-text1 span {
+  display: inline-block;
+  padding-right: 0; /* no gap between repeated copies to match the top line */
 }
 
 /* Custom styles for EventConnect */
@@ -66,4 +100,86 @@ body {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* Splash Screen Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes progressGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(239, 68, 68, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.6);
+  }
+}
+
+.splash-fade-in {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.splash-scale-in {
+  animation: scaleIn 0.6s ease-out;
+}
+
+.progress-glow {
+  animation: progressGlow 2s ease-in-out infinite;
+}
+
+/* Additional scrolling helpers: provide a reverse-direction animation for the second line */
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.scroll-text1 {
+  white-space: nowrap;
+  display: block; /* ensure it occupies its own line */
+  /* use same keyframes as .scroll-text but run in reverse so coding pattern is identical */
+  animation: scroll 20s linear infinite reverse;
+  will-change: transform;
+  line-height: 1.1;
+  padding: 0.5rem 0;
+}
+
+/* optional: add vertical spacing between the two lines */
+.scroll-text + .scroll-text1 {
+  margin-top: 0.75rem;
+}
+
+/* Ensure scroll works properly */
+* {
+  box-sizing: border-box;
+}
+
+/* Touch-friendly scroll for mobile */
+@media (hover: none) and (pointer: coarse) {
+  body {
+    -webkit-overflow-scrolling: touch;
+  }
 }
