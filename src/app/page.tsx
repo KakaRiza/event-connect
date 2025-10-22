@@ -83,8 +83,8 @@ export default function Home() {
 
               {/* Text Content inside the image */}
               <div className="absolute bottom-8 left-8 right-8 lg:right-auto lg:w-1/2 text-white">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">Never Go to Events Alone Again - Find Your Perfect Event Companion</h1>
-                <p className="text-base md:text-lg text-white leading-relaxed">
+                <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 leading-tight">Never Go to Events Alone Again - Find Your Perfect Event Companion</h1>
+                <p className="text-1xl md:text-lxl text-white leading-relaxed">
                   EventConnect menghubungkan Anda dengan orang-orang yang memiliki minat yang sama untuk menjelajahi setiap festival, konser, pameran, dan acara lainnya. Temukan teman perjalanan yang sempurna dan maksimalkan pengalaman
                   acara Anda.
                 </p>
