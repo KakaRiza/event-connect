@@ -78,7 +78,7 @@ export default function Home() {
         <section className="relative py-20 bg-gray-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative h-96 lg:h-[500px] overflow-hidden">
-              <Image src="/Photo/Frame 6.png" alt="Concert background" fill className="object-cover" priority />
+              <Image src="/Photo/Foto-Landing-Page.png" alt="Concert background" fill className="object-cover" priority />
               <div className="absolute inset-0 hero-gradient"></div>
 
               {/* Text Content inside the image */}
@@ -103,7 +103,7 @@ export default function Home() {
               <div className="bg-white shadow-md overflow-hidden card-hover article-card">
                 <div className="relative h-100">
                   <span className="article-number">1</span>
-                  <Image src="/Photo/Frame 12.png" alt="Bandung event" fill className="object-cover" />
+                  <Image src="/Photo/Artikel1.png" alt="Bandung event" fill className="object-cover" />
 
                   {/* Central texture block */}
                   <div className="absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5">
@@ -124,7 +124,7 @@ export default function Home() {
               <div className="bg-white shadow-md overflow-hidden card-hover article-card">
                 <div className="relative h-100">
                   <span className="article-number">2</span>
-                  <Image src="/Photo/Frame 13.png" alt="Yogyakarta event" fill className="object-cover" />
+                  <Image src="/Photo/Artikel2.png" alt="Yogyakarta event" fill className="object-cover" />
 
                   {/* Central texture block */}
                   <div className="absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5">
@@ -145,7 +145,7 @@ export default function Home() {
               <div className="bg-white shadow-md overflow-hidden card-hover article-card">
                 <div className="relative h-100">
                   <span className="article-number">3</span>
-                  <Image src="/Photo/Frame 14.png" alt="Jakarta event" fill className="object-cover" />
+                  <Image src="/Photo/Artikel3.png" alt="Jakarta event" fill className="object-cover" />
 
                   {/* Central texture block */}
                   <div className="absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5">
@@ -166,7 +166,7 @@ export default function Home() {
               <div className="bg-white shadow-md overflow-hidden card-hover article-card">
                 <div className="relative h-100">
                   <span className="article-number">4</span>
-                  <Image src="/Photo/Frame 15.png" alt="Surabaya event" fill className="object-cover" />
+                  <Image src="/Photo/Artikel4.png" alt="Surabaya event" fill className="object-cover" />
 
                   {/* Central texture block */}
                   <div className="absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5">
@@ -187,7 +187,7 @@ export default function Home() {
               <div className="bg-white shadow-md overflow-hidden card-hover article-card">
                 <div className="relative h-100">
                   <span className="article-number">5</span>
-                  <Image src="/Photo/Frame 16.png" alt="Bali event" fill className="object-cover" />
+                  <Image src="/Photo/Artikel5.png" alt="Bali event" fill className="object-cover" />
 
                   {/* Central texture block */}
                   <div className="absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5">
