@@ -48,8 +48,8 @@ html {
   display: block; /* ensure it occupies its own line */
   animation: scroll 20s linear infinite;
   will-change: transform;
-  line-height: 1.1; /* avoid vertical clipping */
-  padding: 0.5rem 0; /* vertical breathing room */
+  line-height: 0.8; /* avoid vertical clipping */
+  padding: 0.001 rem 0; /* vertical breathing room */
 }
 
 /* Large display heading for NEWS AND ARTICLE */
@@ -163,8 +163,8 @@ html {
   /* use same keyframes as .scroll-text but run in reverse so coding pattern is identical */
   animation: scroll 20s linear infinite reverse;
   will-change: transform;
-  line-height: 1.1;
-  padding: 0.5rem 0;
+  line-height: 0.8;
+  padding: 0.1rem 0;
 }
 
 /* optional: add vertical spacing between the two lines */
@@ -182,4 +182,112 @@ html {
   body {
     -webkit-overflow-scrolling: touch;
   }
+}
+
+/* Event Section Styles */
+.event-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.event-image {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-content {
+  padding: 16px;
+}
+
+.event-title {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+}
+
+.event-subtitle {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: #999;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.event-info-box {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-style: italic;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 6px 8px;
+  margin-bottom: 8px;
+  line-height: 1.3;
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.event-info-box:last-of-type {
+  margin-bottom: 12px;
+}
+
+.event-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.event-btn {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  display: inline-block;
+  width: fit-content;
+  min-width: fit-content;
+}
+
+.event-btn-read-more {
+  color: #000;
+  background: #fff;
+  border: 2px solid #000;
+}
+
+.event-btn-read-more:hover {
+  background: #f0f0f0;
+}
+
+.event-btn-add {
+  color: #fff;
+  background: #000;
+}
+
+.event-btn-add:hover {
+  background: #333;
 }
